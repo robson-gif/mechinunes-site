@@ -7,7 +7,7 @@ const team = [
     role: "Sócio Fundador",
     specialty: "Direito Empresarial e Imobiliário",
     oab: "OAB/SP 245.349",
-    image: "/images/robson-mechi.jpg",
+    image: "/images/ricardo-palombini.jpg",
     description:
       "Especialista em Direito Empresarial e Imobiliário. Ampla experiência em assessoria jurídica para empresas e operações imobiliárias de grande porte.",
   },
@@ -16,7 +16,7 @@ const team = [
     role: "Advogado",
     specialty: "Contencioso Empresarial",
     oab: "OAB/SP",
-    image: "/images/ricardo-palombini.jpg",
+    image: "/images/robson-mechi.jpg",
     description:
       "Especialista em litígios empresariais de alta complexidade, arbitragem e recuperação de créditos.",
   },
