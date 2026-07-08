@@ -6,7 +6,6 @@ const team = [
     role: "Sócio Fundador",
     specialty: "Direito Empresarial e Imobiliário",
     oab: "OAB/SP 245.349",
-    image: "/robson-mechi.jpg",
     description:
       "Especialista em Direito Empresarial e Imobiliário. Ampla experiência em assessoria jurídica para empresas e operações imobiliárias de grande porte.",
   },
@@ -15,7 +14,6 @@ const team = [
     role: "Advogado",
     specialty: "Contencioso Empresarial",
     oab: "OAB/SP",
-    image: "/ricardo-palombini.jpg",
     description:
       "Especialista em litígios empresariais de alta complexidade, arbitragem e recuperação de créditos.",
   },
@@ -24,7 +22,6 @@ const team = [
     role: "Advogada",
     specialty: "Recuperação de Crédito e Trabalhista",
     oab: "OAB/SP",
-    image: "/valquiria-palermo.jpg",
     description:
       "Especialista na área de recuperação de crédito e direito trabalhista, com atuação em casos complexos.",
   },
@@ -42,7 +39,7 @@ export function Team() {
             Especialistas em Direito de Negócios
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            Profissionais com formação de excelência e experiência em
+            Profissionais com formação de excelência e experiência em 
             operações complexas do mercado corporativo e imobiliário.
           </p>
         </div>
@@ -53,25 +50,23 @@ export function Team() {
               key={member.name}
               className="group bg-background rounded-2xl p-6 border border-border hover:shadow-lg transition-all duration-300"
             >
-              <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden">
-                <img
-                  src={member.image || "/placeholder.svg"}
-                  alt={member.name}
-                  className="w-full h-full object-cover"
-                />
+              <div className="w-20 h-20 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="font-serif text-2xl font-semibold text-primary">
+                  {member.name.split(" ").slice(1, 3).map(n => n[0]).join("")}
+                </span>
               </div>
-
+              
               <div className="text-center">
                 <h3 className="font-semibold text-foreground">{member.name}</h3>
                 <p className="text-primary text-sm font-medium">{member.role}</p>
                 <p className="text-muted-foreground text-xs mt-1">{member.specialty}</p>
                 <p className="text-muted-foreground text-xs">{member.oab}</p>
               </div>
-
+              
               <p className="text-muted-foreground text-sm mt-4 text-center leading-relaxed">
                 {member.description}
               </p>
-
+              
               <div className="flex items-center justify-center gap-3 mt-4">
                 <button
                   type="button"
