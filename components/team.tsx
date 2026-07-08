@@ -29,6 +29,15 @@ const team = [
     description:
       "Especialista na área de recuperação de crédito e direito trabalhista, com atuação em casos complexos.",
   },
+  {
+    name: "Dra. Anelise Fontes",
+    role: "Advogada",
+    specialty: "Contratual e Imobiliário",
+    oab: "OAB/SP",
+    image: "/images/anelise-fontes.jpg",
+    description:
+      "Atuação em direito empresarial e imobiliário, com experiência em contratos e operações imobiliárias.",
+  },
 ]
 
 export function Team() {
@@ -48,7 +57,7 @@ export function Team() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {team.map((member) => (
             <div
               key={member.name}
