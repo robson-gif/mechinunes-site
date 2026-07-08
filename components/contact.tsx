@@ -12,12 +12,32 @@ export function Contact() {
     message: "",
   })
 
+  const subjectLabels: Record<string, string> = {
+    imobiliario: "Direito Imobiliário",
+    empresarial: "Direito Empresarial",
+    civil: "Direito Civil",
+    outro: "Outro Assunto",
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
-    alert("Mensagem enviada com sucesso! Entraremos em contato em breve.")
-    setFormData({ name: "", email: "", phone: "", subject: "", message: "" })
+
+    const subjectLabel = subjectLabels[formData.subject] || "Outro Assunto"
+    const emailSubject = `Contato pelo site - ${subjectLabel}`
+    const emailBody = [
+      `Nome: ${formData.name}`,
+      `E-mail: ${formData.email}`,
+      `Telefone: ${formData.phone}`,
+      "",
+      "Mensagem:",
+      formData.message,
+    ].join("\n")
+
+    const mailtoUrl = `mailto:robson@mechinunes.com.br?subject=${encodeURIComponent(
+      emailSubject,
+    )}&body=${encodeURIComponent(emailBody)}`
+
+    window.location.href = mailtoUrl
   }
 
   return (
