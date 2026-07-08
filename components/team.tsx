@@ -25,7 +25,7 @@ const team = [
     role: "Advogada",
     specialty: "Recuperação de Crédito e Trabalhista",
     oab: "OAB/SP",
-    image: "",
+    image: "/images/valquiria-palermo.jpg",
     description:
       "Especialista na área de recuperação de crédito e direito trabalhista, com atuação em casos complexos.",
   },
