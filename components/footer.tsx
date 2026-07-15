@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Scale, Linkedin, Instagram, Facebook } from "lucide-react"
+import { Scale, Linkedin, Instagram } from "lucide-react"
 
 const navigation = {
   areas: [
@@ -41,25 +41,22 @@ export function Footer() {
             </p>
             <div className="flex gap-3 mt-6">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/mechi-nunes-advocacia/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-background/10 hover:bg-background/20 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/mechinunes/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-background/10 hover:bg-background/20 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />
-              </a>
-              <a
-                href="#"
-                className="p-2 rounded-lg bg-background/10 hover:bg-background/20 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-4 h-4" />
               </a>
             </div>
           </div>
