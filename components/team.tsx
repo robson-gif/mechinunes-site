@@ -113,13 +113,13 @@ export function Team() {
                 >
                   <Instagram className="w-4 h-4" />
                 </a>
-                <button
-                  type="button"
+                <a
+                  href="#contato"
                   className="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
-                  aria-label={`Email de ${member.name}`}
+                  aria-label={`Entrar em contato sobre ${member.name}`}
                 >
                   <Mail className="w-4 h-4" />
-                </button>
+                </a>
               </div>
             </div>
           ))}
