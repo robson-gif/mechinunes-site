@@ -8,6 +8,7 @@ const team = [
     specialty: "Direito Empresarial e Imobiliário",
     oab: "OAB/SP 245.349",
     image: "/images/ricardo-palombini.jpg",
+    linkedin: "https://www.linkedin.com/in/robsonmechi/",
     description:
       "Especialista em Direito Empresarial e Imobiliário. Ampla experiência em assessoria jurídica para empresas e operações imobiliárias de grande porte.",
   },
@@ -17,6 +18,7 @@ const team = [
     specialty: "Contencioso Empresarial",
     oab: "OAB/SP",
     image: "/images/robson-mechi.jpg",
+    linkedin: "https://www.linkedin.com/company/mechi-nunes-advocacia/",
     description:
       "Especialista em litígios empresariais de alta complexidade, arbitragem e recuperação de créditos.",
   },
@@ -26,6 +28,7 @@ const team = [
     specialty: "Recuperação de Crédito e Trabalhista",
     oab: "OAB/SP",
     image: "/images/valquiria-palermo.jpg",
+    linkedin: "https://www.linkedin.com/company/mechi-nunes-advocacia/",
     description:
       "Especialista na área de recuperação de crédito e direito trabalhista, com atuação em casos complexos.",
   },
@@ -35,6 +38,7 @@ const team = [
     specialty: "Contratual e Imobiliário",
     oab: "OAB/SP",
     image: "/images/anelise-fontes.jpg",
+    linkedin: "https://www.linkedin.com/company/mechi-nunes-advocacia/",
     description:
       "Atuação em direito empresarial e imobiliário, com experiência em contratos e operações imobiliárias.",
   },
@@ -91,13 +95,15 @@ export function Team() {
               </p>
               
               <div className="flex items-center justify-center gap-3 mt-4">
-                <button
-                  type="button"
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
                   aria-label={`LinkedIn de ${member.name}`}
                 >
                   <Linkedin className="w-4 h-4" />
-                </button>
+                </a>
                 <a
                   href="https://www.instagram.com/mechinunes/"
                   target="_blank"
