@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Linkedin, Mail } from "lucide-react"
+import { Linkedin, Mail, Instagram } from "lucide-react"
 
 const team = [
   {
@@ -98,6 +98,15 @@ export function Team() {
                 >
                   <Linkedin className="w-4 h-4" />
                 </button>
+                <a
+                  href="https://www.instagram.com/mechinunes/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
+                  aria-label={`Instagram de ${member.name}`}
+                >
+                  <Instagram className="w-4 h-4" />
+                </a>
                 <button
                   type="button"
                   className="p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
